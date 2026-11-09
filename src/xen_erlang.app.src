@@ -1,0 +1,8 @@
+{application, xen_erlang,
+ [{description, "Distributed Xen control plane"},
+  {vsn, "0.1.0"},
+  {registered, [xen_erlang_sup]},
+  {mod, {xen_erlang_app, []}},
+  {applications, [kernel, stdlib]},
+  {env, []},
+  {modules, [xen_erlang_app, xen_erlang_sup, xen_quorum]}]}.
